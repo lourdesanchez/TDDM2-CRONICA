@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Crónica</title>
+  <!----------------------ICONO--------------------------->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!----------------------CSS--------------------------->
+  <link rel="stylesheet" href="estilos/estilos.css">
+
+  <!--  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <script type="text/javascript" src="js/materialize.min.js"></script> -->
+</head>
+<body>
+  <!-- Header -->
+  <section id="section_header">
+
+    <div class="col1">
+       <ul>
+        <li><img src="img/menu.png" alt=""></li>
+       <li class="palabraMenu">Menu</li>
+       </ul>
+    </div>
+
+    <div class="col2Buscador">
+        <ul>
+            <li class="buscador"><img src="img/buscar.png" alt=""></li>
+            <li class="palabraBuscar">Buscar</li>
+        </ul>
+    </div>
+
+    <div class="contCronica">
+        <img src="img/cronica.png" alt="">
+    </div>
+
+    <div class="en-vivo">
+       <img src="img/envivo.png" alt="">
+    </div>
+
+
+  <!--header>
+    <div class="container">
+    <  <img src="" alt=""> >
+      <nav class="contMenuBuscador" >
+        <ul>
+            <li><img src="img/menu.png" alt=""></li>
+            <li>Menu</li>
+        </ul>
+        <ul>
+          <-  <img src="img/menu.png" alt=""> >
+          <li class="menu"><img src="img/menu.png" alt=""> <a href="#">Menú</a>  </li>
+          <li><img src="img/buscar.png" alt=""><a href="#">Buscar</a> </li>
+        </ul>
+      </nav>
+      <div class="cronica">
+        <img src="img/cronica.png" alt="">
+      </div>
+    </div>
+  </header-->
+    </section>
+
+<section id="section-cuerpo1">
+
+<!-----------------CONTENEDOR DEL TITULO-------------->
+  <div class="placroj">
+    <h1>PLACAS ROJAS</h1>
+  </div>
+
+
+  <!-----------------EN VOTACION-------------->
+  <section id="section-votacion">
+<h2>EN VOTACIÓN</h2>
+
+
+
+  <!----------------------DROPDOWN------------------>
+  <div class="dropdown">
+    <select name="temas" id="temas">
+      <option class="opcionesDeTemas"  required selected disabled >Shakira y Piqué</option>
+      <option value="Shakira y Piqué">Shakira y Piqué</option>
+      <option value="superclásico">Superclásico</option>
+      <option value="concierto Tini">Concierto Tini</option>
+      <option value="Maria Becerra">Maria Becerra</option>
+    </select>
+
+
+
+    <select name="ordenar" id="ordenar">
+      <option class="ordenarPor"  required selected disabled >Más recientes</option>
+      <option value="Shakira y Piqué">Más recientes</option>
+      <option value="superclásico">Más me gusta</option>
+    </select>
+  </div>
+
+
+
+
+  <!-----------------1ERA FILA DE PLACAS-------------->
+  <div class="container">
+    <div class="card">
+        <img src="img/p1.png" alt="">
+        <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/p2.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
+    </div>
+    <div class="card">
+        <img src="img/p3.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
+    </div>
+  </div>
+
+
+ <!-----------------2DA FILA DE PLACAS-------------->
+ <div class="container">
+  <div class="card">
+      <img src="img/p4.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+      <img src="img/p5.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+      <img src="img/p6.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+
+  <!-----------------ANUNCIO DE CREAR TUS PLACAS-------->
+  <div class="grid">
+    <div class="anuncio">
+      <img src="img/placaAnuncio.png" alt="">
+    </div>
+    <div class="cardsplac">
+        <img id="plac-anuncio" src="img/p7.png" alt=""><br>
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
+        <img id= "placa-creatuplaca.inf" src="img/p8.png" alt=""  style="
+        margin-top: 30px;" >
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+          </div>
+              <div class="relleno-amarillo">
+                <p id="increment-text">0</p>
+              </div>
+          </div>
+    </div>
+</div>
+
+
+<button class="botonCrearPlaca">
+  <strong><a href="#section-cuerpo3">CREAR </a></strong>
+</button>
+
+
+
+<!------------------------3RA FILA DE PLACAS--------------------------------------->
+<div class="container">
+  <div class="card">
+      <img src="img/p9.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+      <img src="img/p10.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+      <img src="img/p11.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+
+
+<!------------------------4TA FILA DE PLACAS--------------------------------------->
+<div class="container">
+  <div class="card">
+      <img src="img/p12.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+      <img src="img/p13.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+      <img src="img/p14.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado" onclick="incrementButton()">VOTA</button>
+        </div>
+            <div class="relleno-amarillo">
+              <p id="increment-text">0</p>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+
+  <!----------------------BOTON DE CARGAR MÁS------------------------->
+<div class="cargarmas">
+  <button type="button" name="button">CARGAR MÁS</button>
+</div>
+</section>
+
+ <!----------------------ANTERIORES MÁS VOTADAS------------------------->
+<section id="section-cuerpo2">
+
+<section id="section-mas-votadas">
+  <h2>ANTERIORES MÁS VOTADAS</h2>
+
+   <!----------------------TEMAS + BOTONES------------------------->
+  <div class="titulos-masvotadas">
+  <h3>TEMAS</h3>
+</div>
+    <div id="botones-masvotadas">
+      <button>Carpinchos en Nordelta</button>
+      <button>Chano internación</button>
+      <button>Cinco pesos</button>
+      <button>China Suárez y Rusherking</button>
+    </div>
+
+ 
+
+    <!----------------------PODIO------------------------->
+    <div class="titulos-masvotadas2">
+      <h3>PODIO</h3>
+    </div>
+
+     <!-----------------1ERA FILA DE PLACAS-------------->
+ <div class="container">
+   <div class="card2">
+       <img src="img/p15.png" alt="">
+       <div class="votar">
+         <div class="boton-votar">
+           <button class="boton-votar-votado2">VOTADO</button>
+         </div>
+             <div class="relleno-amarillo-claro">
+               <p id="increment-text-votado">43</p>
+             </div>
+         </div>
+   </div>
+   <div class="card2">
+       <img src="img/p15.png" alt="">
+       <div class="votar">
+         <div class="boton-votar">
+           <button class="boton-votar-votado2">VOTADO</button>
+         </div>
+             <div class="relleno-amarillo-claro">
+               <p id="increment-text-votado">36</p>
+             </div>
+         </div>
+   </div>
+   <div class="card2">
+       <img src="img/p16.png" alt="">
+       <div class="votar">
+         <div class="boton-votar">
+           <button class="boton-votar-votado2">VOTADO</button>
+         </div>
+             <div class="relleno-amarillo-claro">
+               <p id="increment-text-votado">29</p>
+             </div>
+         </div>
+   </div>
+ </div>
+
+ 
+
+     <!----------------------SIGUIENTES PUESTOS------------------------->
+  
+     <div class="titulos-masvotadas2">
+
+       <h3>SIGUIENTES PUESTOS</h3>
+
+     </div>
+ 
+<!-----------------2DA FILA DE PLACAS-------------->
+<div class="container">
+  <div class="card">
+      <img src="img/p17.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado2">VOTADO</button>
+        </div>
+            <div class="relleno-amarillo-claro">
+              <p id="increment-text-votado">17</p>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+      <img src="img/p18.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado2">VOTADO</button>
+        </div>
+            <div class="relleno-amarillo-claro">
+              <p id="increment-text-votado">15</p>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+      <img src="img/p19.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado2">VOTADO</button>
+        </div>
+            <div class="relleno-amarillo-claro">
+              <p id="increment-text-votado">13</p>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+
+  <!------------------------3RA FILA DE PLACAS--------------------------------------->
+  <div class="container">
+    <div class="card">
+        <img src="img/p20.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTADO</button>
+          </div>
+              <div class="relleno-amarillo-claro">
+                <p id="increment-text-votado">7</p>
+              </div>
+          </div>
+    </div>
+    <div class="card">
+        <img src="img/p21.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTADO</button>
+          </div>
+              <div class="relleno-amarillo-claro">
+                <p id="increment-text-votado">4</p>
+              </div>
+          </div>
+    </div>
+    <div class="card">
+        <img src="img/p22.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTADO</button>
+          </div>
+              <div class="relleno-amarillo-claro">
+                <p id="increment-text-votado">1</p>
+              </div>
+          </div>
+    </div>
+  </div>
+
+
+  <!----------------------BOTON DE CARGAR MÁS------------------------->
+  <div class="cargarmas">
+    <button type="button" name="button">CARGAR MÁS</button>
+  </div>
+  </section>
+  
+
+</section>
+<!----------------------CREA TU PROPIA PLACA FORM------------------------->
+<section id="section-cuerpo3">
+<div id="form-placa">
+  <h3>Creá tu propia placa y compartila con tus amigos</h3>
+
+  <!----------------------DROPDOWN------------------>
+  <div id="columna-madre-placas">
+  <div id="columna-placas">
+  <form onsubmit="enviarPlaca(); return false">
+  <div id="dropdownPlaca">
+    <select name="temas" id="temasPlacas">
+      <option class="opcionesDeTemas"  required selected disabled >Temas</option>
+      <option value="Shakira y Piqué">Shakira y Piqué</option>
+      <option value="superclásico">Superclásico</option>
+      <option value="concierto Tini">Concierto Tini</option>
+      <option value="Maria Becerra">Maria Becerra</option>
+    </select>
+  </div>
+
+     <!--textarea  name="message" placeholder="Texto de la placa" rows="10" cols="68" id="texto-form-placa" ></textarea-->
+
+     <textarea  name="message" placeholder="Texto de la placa" required placeholder  id="texto-form-placa" ></textarea>
+
+      <div id="contenedor-nombre-placa-form">
+        <input type="text" name="name" placeholder="Ingresa tu nombre (Opcional)" id="name" class="cont-formulario">
+      </div>
+  </form>
+
+     
+   
+  <div id="boton-placa-form">
+    <button  type="button" name="button">ENVIAR</button>
+     </div>
+
+
+    <!--input type="checkbox" name="drop" id="drop">
+    <label for="drop">Shakira y Piqué</label>
+    <ul>
+      <li><a href="#" title="Shakira y Piqué">Shakira y Piqué</a></li>
+      <li><a href="#" title="Superclásico">Do something else</a></li>
+      <li><a href="#" title="Concierto Tini">Concierto Tini</a></li>
+      <li><a href="#" title="Maria Becerra">Maria Becerra</a></li>
+    </ul-->
+
+    <!--button class="dropbtn">Shakira y Piqué</button>
+    <div class="dropdown-contenido">
+      <a href="#">Superclásico</a>
+      <a href="#">Concierto Tini</a>
+      <a href="#">Maria Becerra</a>
+    </div-->
+
+</div>
+
+<div id="columna-placas2">
+  <img src="img/p1.png" alt="">
+      </div>
+    </div>
+
+</section>
+
+
+ <!----------------------FEEDBACK------------------------->
+<div class="fondo-feed no-mostrar" id="contenedor-feedback">
+  <section id="seccion-feedback" class="feed">
+    <h3>
+      !MUY BUENA PLACA!
+    </h3>
+    <p> 
+      No te olvides de compartir el resultado
+     </p>
+    <br />
+    <div class="contFeed">
+      <h2>
+        <span id="texto-puesto"></span>
+      </h2>
+      <ul>
+        <li> <img src="img/placaFeed.png" alt=""></li>
+        <li> <img src="img/compartir.png" alt=""></li>
+      </ul>
+    </div>
+    <!--button class="btn-feedback" onclick="cerrarFeedback()">Genial</button-->
+  </section><br><br>
+</div>
+
+
+
+
+
+ <!----------------------CONTENEDOR DE NOTICIAS RELACIONADAS------------------------->
+
+ <div class="noticrel">
+  <h2>NOTICIAS RELACIONADAS</h2>
+  <h3>VER MÁS</h3>
+  <img src="img/vermas.png" alt="">
+</div>
+
+
+
+ <!----------------------CARD CON LAS NOTICIAS------------------------->
+ <section id="notrel">
+  <div class="container">
+    <div class="card">
+        <img src="img/shak1.png" alt="">
+        <div class="descrip">
+          <img src="img/hover.png" alt="">
+         </div>
+    </div>
+    <div class="card">
+        <img src="img/shak2.png" alt="">
+        <div class="descrip2">
+          <img src="img/hover2.png" alt="">
+         </div>
+    </div>
+    <div class="card">
+        <img src="img/shak3.png" alt="">
+        <div class="descrip3">
+          <img src="img/hover3.png" alt="">
+         </div>
+    </div>
+  </div>
+</section><br><br>
+
+ <!----------------------FOOTER------------------------->
+ <section id="footer">
+  <div class="contFooter">
+    <img src="img/logoFooter.png" alt="">
+    <br><br><br>
+
+    <div class="columnasFooter">
+
+      <div class="colum1Footer">
+        <h3>SOCIEDAD</h3> <br>
+        <ul>
+          <li>POLÍTICA</li>
+          <li>COMUNIDAD</li>
+          <li>POLICIALES</li>
+          <li>SALUD</li>
+          <li>CLIMA</li>
+          <li>OPINIÓN</li>
+        </ul>
+      </div>
+  
+      <div class="colum2Footer">
+        <h3>ENTRETENIMIENTO</h3> <br>
+        <ul>
+          <li>CINE Y SERIES</li>
+          <li>COSAS DE LOCOS</li>
+          <li>PARANORMAL</li>
+          <li>VIDEOS</li>
+        </ul>
+      </div>
+  
+      <div class="colum3Footer">
+        <h3>INTERNACIONALES</h3> <br>
+        <ul>
+          <li>MUNDO</li>
+          <li>TECNOLOGIA</li>
+        </ul>
+      </div>
+  
+      <div class="colum4Footer">
+        <h3>OTROS</h3> <br>
+        <ul>
+          <li>COCINA</li>
+          <li>LOTERÍA Y QUINIELA</li>
+          <li>SANTORAL</li>
+          <li>EFEMÉRIDES</li>
+          <li>HORÓSCOPO</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <img src="img/linea.png" alt="">
+    <br><br>
+
+    <div class="colTxtInfo">
+      <ul>
+        <li>Seguinos en:</li>
+        <li class="apps">Descarga nuestra app</li>
+      </ul>
+    </div><br>
+
+    <div class="colInfo">
+      <ul>
+        <li><img src="img/redes.png" alt=""></li>
+        <li><img src="img/apps.png" alt=""></li>
+        <li><img src="img/grupoCrónica.png" alt=""></li>
+      </ul>
+    </div>
+
+ </div>
+
+ </section>
+
+</section>
+
+ <!----------------------JAVA------------------------->
+ <script src="js/feedback.js"></script>
+</body>
+</html>

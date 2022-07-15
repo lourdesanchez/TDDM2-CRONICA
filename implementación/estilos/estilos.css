@@ -1,0 +1,966 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*-----------------------------BARRA DE NAVEGACIÓN----------------------------*/
+#section_header {
+  margin-left: 30px;
+  display: flex;
+ /* flex-wrap: wrap;*/
+
+  justify-content:space-between;
+  align-items: center;
+}
+
+
+#section_header .col1, #section_header .col2Buscador{
+    background-color: #F3F3F3;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.col2Buscador{
+  width: 130px;
+}
+
+#section_header .col1 ul li, #section_header .col2Buscador ul li ,.en-vivo , .contCronica {
+    float: left;
+    list-style: none;
+    cursor: pointer;
+}
+
+#section_header .col1 ul .palabraMenu, #section_header .col2Buscador ul .palabraBuscar , .contCronica, .en-vivo{
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+
+#section_header .contCronica{
+ margin-left: -50px;
+}
+
+#section-cuerpo1 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*#section_header  header nav .contMenuBuscador{
+    background-color: #ac4848;
+}
+#section_header nav ul li {
+    list-style: none;
+    float: left;
+    /*padding: 30px;*/
+    /*display: flex
+  }
+  
+  #section_header nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #section_header .Menú {
+    background-color: rgba(243, 243, 243, 1);
+  }
+  #section_header header {
+    height: 100%;
+  }
+  #section_header .container {
+    display: flex;
+  }
+  #section_header .cronica {
+    display: flex;
+    justify-content: center;
+  }*/
+  
+
+  /*-----------------------------CONTENEDOR DEL TITULO "PLACAS ROJAS"----------------------------*/
+  .placroj {
+    padding: 1px;
+    margin-left: 0px;
+    /*background-color: rgba(192, 0, 0, 1);*/
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+
+  }
+  .placroj h1 {
+  font-size: 3rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-style: normal;
+  color: #490000;
+  }
+
+#section-votacion h2{
+  display: flex;
+  background: #6F1111;
+  border-radius: 5px;
+  height: 65px;
+  align-items: center;
+  color:white;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+#section-mas-votadas{
+margin-top: 100px;
+}
+#section-mas-votadas h2{
+  display: flex;
+  background: #6F1111;
+  border-radius: 5px;
+  height: 65px;
+  align-items: center;
+  color:white;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+#section-cuerpo3{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.titulos-masvotadas{
+display: flex;
+width: 108px;
+height: 50px;
+/*background: #EBC351;*/
+border-radius: 5px;
+align-items: center;
+color:#6F1111;
+padding-left: 20px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-size: 1.3em;
+margin-top: 70px;
+margin-bottom:30px;
+}
+.titulos-masvotadas2{
+  display: flex;
+  width:29.5vw;
+  height: 50px;
+  background: #EBC351;
+  border-radius: 5px;
+  align-items: center;
+  color:black;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 1.3em;
+  margin-top: 80px;
+  margin-bottom:30px;
+}
+
+   /*-----------------------------BOTONES DE TEMAS----------------------------*/
+  /*.botones {
+    display: flex;
+    justify-content: space-around;
+  }
+  .botones button {
+    font-size: 1.1rem;
+    width: 180px;
+    height: 50px;
+  }
+
+  .botones .enVotacion {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(111, 17, 17, 1);
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 30%;
+  }
+
+  .botones .masVotadas {
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background: rgba(192, 0, 0, 1);
+    color: white;
+    border: none;
+    width: 30%;
+  }*/
+  
+  #botones-masvotadas{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #botones-masvotadas button {
+   width: 310px;
+   height: 58px;
+   border-style: none;
+   background: #F3F3F3;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 5px;
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1.3em;
+   text-align: left;
+   padding-left: 20px;;
+
+  }
+
+  #botones-masvotadas button:hover{
+    width: 346px;
+    height: 58px;
+    border-style: none;
+    background: #F3F3F3;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-align: left;
+    color: darkgray;
+    padding-left: 20px;;
+    
+      }
+      #botones-masvotadas button:focus {
+        width: 346px;
+        height: 58px;
+        border-style: none;
+        background: #F3F3F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3em;
+        text-align: left;
+        color: darkgray;
+        padding-left: 20px;;
+        
+          }
+  /*---------------------------BOTONES DESPLEGABLES-------------------------------*/
+
+  .dropdown {
+    /*position:relative;*/
+   display: flex;
+    /*width:200px;*/
+    height: 100px;
+    font-family:'Helvetica', Arial, sans-serif;
+
+    /*margin:20px auto;
+    
+    /*position: relative;
+    display: inline-block;*/
+  }
+
+  .dropdown select{
+    /*margin-left: 60px;*/
+    background:#F3F3F3;
+    color:rgb(0, 0, 0);
+    font-weight:bold;
+   /* display:block;
+    float:left;*/
+    /*position:relative; */
+    margin-top: 30px;
+    margin-bottom:30px;
+    margin-right:1.7%;
+    padding:15px;
+    cursor:pointer;
+    border: none;
+    border-radius:0.3em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width:30.7vw;
+    height: 68px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+
+  .dropdown select option {
+    background-color: #F3F3F3;
+    font-size: 14px;
+    width: 160px;
+    height: 40px;
+    color:rgb(0, 0, 0);
+
+  }
+
+
+  /*.dropbtn {
+    background-color: #F3F3F3;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /*------------ESTO HACE QUE SE OCULTEN LAS OPCIONES--------------------*/
+  /*.dropdown-contenido {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+ /*------------ESTO PARA QUE APAREZCAN--------------------*/
+  /*.dropdown-contenido a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-contenido a:hover {background-color: #C95D5D}
+.dropdown:hover .dropdown-contenido {
+  display: block;
+}*/
+
+
+
+
+
+  /*-----------------------------PLACAS----------------------------*/
+  .container {
+    display: flex;
+
+    justify-content: space-between;
+
+  }
+  .container .card img{
+    width: 30.7vw;
+   justify-content: space-between;
+   margin-top: 30px;
+   }
+   .container .card2 img{
+    width: 30.7vw;
+   justify-content: space-between;
+
+   }
+   
+    /*-------------------------------------------------------------*/
+
+
+    /*-------------------------BOTONES VOTAR----------------------------*/
+  .votar{
+    display: flex;  
+    text-align: left;
+    margin-top: 20px;
+  }
+  .boton-votar-votado2{
+    width: 8vw;
+    height: 6vh;
+    background:#FFED92;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .relleno-amarillo{
+    width: 2.5vw;
+    height: 6vh;
+    justify-content: flex-start;
+    font-weight: 500;
+    background: #FFED92;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+  .relleno-amarillo-claro{
+  
+    background: #FFE145;
+    width: 2.5vw;
+    height: 6vh;
+    justify-content: flex-start;
+    font-weight: 500;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  }
+  #increment-text{
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+ 
+
+  }
+  #increment-text-votado{
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+
+
+  }
+  .votar{
+    display: flex;  
+    text-align: left;
+    margin-top: 20px;
+  }
+  .boton-votar-votado{
+    width: 8vw;
+    height: 6vh;
+    background: #FFE145;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  #increment-text{
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    padding-left: 2px;
+    padding-right: 2px;
+
+  }
+
+
+  /*.grid {
+  display: grid;
+  /*grid-template-columns: 65% 33%; 
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 100px;
+  
+  }
+  .grid .cardsplac {
+    margin-top: 20px;
+    margin-left: 0px;
+  
+  }
+  .grid img {
+    margin-left: 50px;
+    margin-right: 0px;
+  }*/
+
+/*----------------------FILA DE LA IMAGEN CON EL ANUNCIO Y PLACAS-------------------------*/
+.botonCrearPlaca{
+  position:absolute;
+  top: 1600px;
+  left: 75px;
+  background: #C00000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 157px;
+  font-family: 'Roboto';
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.botonCrearPlaca a {
+  color: white;
+  text-decoration: none;
+}
+
+.grid{
+  display: flex;
+  margin-top: 30px;
+ 
+}
+.grid .anuncio img{
+  align-items: center;
+  width: 62.6vw;
+  height: 100%;
+  border-radius: 5px;
+
+}
+.grid .cardsplac .votar{
+margin-left: 1.5vw;
+}
+
+.grid .cardsplac img{
+width: 30.7vw;
+margin-left: 1.5vw;
+
+}
+.grid .cardsplac #placa-creatuplaca.inf{
+margin-top:30px;
+}
+
+
+
+
+ /*-------------------------BOTONES VOTAR----------------------------*/
+ .votar{
+  display: flex;  
+  text-align: left;
+  margin-top: 20px;
+}
+.boton-votar-votado{
+  width: 8vw;
+  height: 6vh;
+  background: #FFE145;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  color: #000000;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.relleno-amarillo{
+  width: 2.5vw;
+  height: 6vh;
+  justify-content: flex-start;
+  font-weight: 500;
+  background: #FFED92;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+#increment-text{
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  padding-left: 2px;
+  padding-right: 2px;
+
+}
+
+
+
+
+
+
+
+  /*----------------------BOTÓN DE CARGAR MÁS-------------------------*/
+  .cargarmas {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .cargarmas button {
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    background: #F3F3F3;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3.68254px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  .cargarmas button:hover{
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    background: #C00000;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3.68254px; 
+    border:1px solid #C00000;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+
+ /*-----------------------------FORM PLACAS----------------------------*/
+ #form-placa{
+background-color: #E8BF0A;
+padding-top: 50px;
+padding-bottom: 50px;
+
+ }
+
+#form-placa h3{
+  text-align: center;
+  font-family: 'Roboto';
+  font-style:normal;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#columna-madre-placas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#columna-placas{
+  display: flex;
+  flex-direction: column;
+}
+
+#columna-placas2{
+margin-left: 25px;
+}
+
+#columna-placas2 img{
+  width:30.7vw;
+  height:320px;
+  }
+
+#dropdownPlaca {
+  /*position:relative;*/
+  /*width:200px;*/
+
+  font-family:'Helvetica', Arial, sans-serif;
+
+  /*margin:20px auto;
+  
+  /*position: relative;
+  display: inline-block;*/
+}
+  #dropdownPlaca select{
+    /*margin-left: 60px;*/
+
+    background: #C00000;
+    box-shadow: 0px 4.53257px 4.53257px rgba(0, 0, 0, 0.25);
+    border-radius: 3.56729px 3.56729px 0px 0px;
+   /* display:block;
+    float:left;*/
+    /*position:relative; */
+
+    margin-right:1.7%;
+    padding-left:15px;
+    cursor:pointer;
+    border: none;
+    border-radius: 5px 5px 0px 0px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width:30.9vw;
+    height: 59px;
+    font-size: 1.2em;
+    color: white;
+  }
+
+  #dropdownPlaca select option {
+    background-color: white;
+    font-size: 14px;
+    width: 160px;
+    height: 40px;
+    font-size: 0.9em;
+    color:rgb(0, 0, 0);
+    padding:15px;
+    border-radius:0.3em;
+
+  }
+  
+textarea{
+  resize: none; /*esto es para que no se le pueda cambiar el tamaño*/
+}
+
+  #texto-form-placa{
+    min-height: 140px;
+    padding: 10px 1px 10px 10px;
+    width:30.1vw;
+    font-family: 'Roboto';
+    font-style: italic;
+    background: #FFFFFF;
+    box-shadow: 0px 4.53257px 4.53257px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px; 
+    border: none; 
+    font-size: 1em;
+  }
+
+  .cont-formulario{
+    width:30.1vw;
+    height: 59px;
+    padding: 5px 1px 5px 10px;
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: italic;
+    box-shadow: 0px 4.53257px 4.53257px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+    border: none; 
+    font-size: 1em;
+  }
+  #contenedor-nombre-placa-form{
+    margin-top: 30px;
+
+  }
+
+   #boton-placa-form{
+  
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+   }
+
+   #boton-placa-form button{
+    width: 10vw;
+    height: 7vh;
+    border-style: none;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+   }
+   #boton-placa-form button:hover{
+    width: 10vw;
+    height: 7vh;
+    border-style: none;
+    background: #C00000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    
+      }
+
+      /*---------------------------FEEDBACK-------------------------------*/
+      #seccion-feedback {
+        background-color: #E8BF0A;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    
+      .mostrar {
+        display: flex;
+      }
+      
+      .no-mostrar {
+        display: none !important;
+      }
+      
+      #seccion-feedback h3, p {
+        padding-top: 10px;
+        font-family: 'Roboto';
+        text-align: center;
+        font-size: 2rem;
+      }
+    
+      #seccion-feedback p {
+        font-size: 1rem;
+      }
+
+      .contFeed{
+        display: flex;
+       justify-content: center;
+
+      }
+
+      .contFeed ul li{
+        list-style: none;
+      }
+      
+      /*.fondo-popup {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.55);
+       /* opacity: 0.85;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }*/
+    
+      .popup {
+        /*width: 80%;*/
+        /*max-height: 90%;*/
+      }
+    
+    
+    .no-mostrar {
+        display: none !important;
+      }
+      
+
+
+
+  /*----------------------NOTICIAS RELACIONADAS-------------------------*/
+/* ----------- Titulo  ----------- */
+
+
+.noticrel {
+  display: flex;
+  background: #6F1111;
+  border-radius: 5px;
+    height: 65px;
+        align-items: center;
+}
+
+
+  .noticrel h2{
+    color:white;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+   /* width: 180px;*/
+  }
+
+  .noticrel h3 {
+    margin-left: 1050px;
+    color: rgba(255, 255, 255, 1) ;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    /*width: 180px;*/
+  }
+  .noticrel img {
+    margin-left: 10px;
+  }
+
+
+/*----------- Notas  ----------- */
+
+#notrel .container {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  #notrel .container .card img{
+    width: 30.7vw;
+   justify-content: space-between;
+   margin-top: 30px;
+   }
+   #notrel .card {
+    position: relative;
+    display: inline-block;
+
+   }
+#notrel .descrip {
+    position: absolute;
+    top: 57%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    opacity: 0;
+  /*transition: all 0.1s ease-out 0.1s; */
+}
+
+#notrel .card:hover .descrip {
+opacity: 1;
+}
+
+#notrel .descrip2 {
+    position: absolute;
+    top: 57%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    opacity: 0;
+  /*transition: all 0.1s ease-out 0.1s;*/
+}
+
+#notrel .card:hover .descrip2 {
+opacity: 1;
+}
+
+#notrel .descrip3 {
+    position: absolute;
+    top: 59%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    opacity: 0;
+  /*Stransition: all 0.1s ease-out 0.1s; */
+}
+
+#notrel .card:hover .descrip3 {
+opacity: 1;
+}
+
+
+
+
+
+
+  /*----------------------------------FOOTER-----------------------------*/
+  .contFooter{
+    background-color: #2C2222;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .contFooter img{  
+    margin-left: 25px;
+  
+  }
+
+  .columnasFooter{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .contFooter h3{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  .contFooter .colum1Footer ul li, .colum2Footer ul li, .colum3Footer ul li, .colum4Footer ul li{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    list-style: none;
+    font-size: 0.9rem;
+  }
+
+   .contFooter .colTxtInfo ul{
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  .colTxtInfo ul li{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    list-style: none;
+    font-size: 0.8rem;
+  }
+
+
+  .contFooter .colInfo ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .colInfo ul li{
+    list-style: none;
+  }
+  
+ 
