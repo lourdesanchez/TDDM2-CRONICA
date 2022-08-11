@@ -42,11 +42,11 @@
     </div>
 
     <div class="fila4">
-        <div class="contenedor"></div>
+        <!--div class="contenedor-vacio"></div-->
     </div>
 
     <div class="fila5">
-        <img src="img/enVivo.png" alt="">
+        <!--img src="img/enVivo.png" alt=""-->
     </div>
   </div>
   <br>
@@ -192,7 +192,7 @@
     <br>
 
     <button class="vermas" id="ver-mas">
-      Ver Mas
+      VER MÁS
       <div class="likes"></div>
     </button>
 
@@ -236,6 +236,9 @@
     </div>
   </div>
   </section>
+  <br>
+  <br>
+  <br>
 
 
    <!---------------------------------CUERPO2----------------------------------->
@@ -245,24 +248,24 @@
         <div class="anteriores-votadas">
             <h2>ANTERIORES MÁS VOTADAS</h2>
         </div>
+        <br>
+        <br>
+        <br>
 
          <!----------------------TEMAS + BOTONES------------------------->
-     <div class="titulos-masvotadas">
+     <div class="subtitulo-masvotadas">
            <h3>TEMAS</h3>
     </div>
+    <br>
+
       <div id="botones-masvotadas">
-        <button>Carpinchos en Nordelta</button>
-        <button>Chano internación</button>
-        <button>Cinco pesos</button>
-        <button>China Suárez y Rusherking</button>
+        <button>CARPINCHOS EN NORDELTA</button>
+        <button>CHANO INTERNACIÓN</button>
+        <button>CINCO PESOS</button>
+        <button>CHINA SUÁREZ Y RUAHERKING</button>
       </div>
 
-      <div class="titulos-podio">
-        <h3>PODIO</h3>
-      </div>
-
-        <!----------------------PODIO------------------------->
-    <div class="titulos-masvotadas2">
+      <div class="subtitulo-podio">
         <h3>PODIO</h3>
       </div>
   
@@ -304,11 +307,12 @@
            </div>
      </div>
    </div>
+   <br>
 
     
      <!----------------------SIGUIENTES PUESTOS------------------------->
   
-     <div class="titulos-siguientepuesto">
+     <div class="subtitulo-siguientepuesto">
         <h3>SIGUIENTES PUESTOS</h3>
      </div>
 
@@ -391,46 +395,103 @@
     </div>
   </div>
 
-   <!----------------------BOTON DE CARGAR MÁS------------------------->
+   <!-------------------BOTON DE CARGAR MÁS------------------->
    <div class="cargarmas">
-    <button type="button" name="button">CARGAR MÁS</button>
+    <button type="button" name="button">VER MÁS</button>
   </div>
   </section>
-     </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
 
-     <!----------------------CONTENEDOR DE NOTICIAS RELACIONADAS------------------------->
+  <!-------------------------------------------CUERPO3 - CREAR PLACA----------------------------------->
+  <section id="seccion-cuerpo3">
+    <div id="form-placa">
+      <h3>Creá tu propia placa y compartila con tus amigos</h3>
+    
+      <!----------------------DROPDOWN------------------>
+      <div id="columna-madre-placas">
+      <div id="columna-placas">
+      <form onsubmit="enviarPlaca(); return false">
+      <div id="dropdownPlaca">
+        <select name="temas" id="temasPlacas">
+          <option class="opcionesDeTemas"  required selected disabled >Temas</option>
+          <option value="Shakira y Piqué">Shakira y Piqué</option>
+          <option value="superclásico">Superclásico</option>
+          <option value="concierto Tini">Concierto Tini</option>
+          <option value="Maria Becerra">Maria Becerra</option>
+        </select>
+      </div>
+
+      <textarea  name="message" placeholder="Texto de la placa" required placeholder  id="texto-form-placa" ></textarea>
+
+      <div id="contenedor-nombre-placa-form">
+        <input type="text" name="name" placeholder="Ingresa tu nombre (Opcional)" id="name" class="cont-formulario">
+      </div>
+  </form>
+
+  <div id="boton-placa-form">
+    <button  type="button" name="button">ENVIAR</button>
+    </div>
+
+    </div>
+
+    <div id="columna-placas2">
+      <div class="contenedor">
+      </div>
+      <!--img src="img/p1.png" alt=""-->
+      </div>
+    </div>
+
+  </section>
+  <br>
+  <br>
+  <br>
+
+   <!---------------------------------CUERPO4----------------------------------->
+   <section id="#secction-cuerpo4">
+
+     <!----------CONTENEDOR DE TITULO-NOTICIAS RELACIONADAS------------>
      <div class="noticrel">
-        <h2>NOTICIAS RELACIONADAS</h2>
-      
-        <h3>VER MÁS</h3>
-        <img src="img/vermas.png" alt="">
-      </div><br>
+      <h2>NOTICIAS RELACIONADAS</h2>
+    
+      <h3>VER MÁS</h3>
+      <img src="img/vermas.png" alt="">
+    </div><br>
 
-      <!----------------------CARD CON LAS NOTICIAS------------------------->
+          <!----------------------CARD CON LAS NOTICIAS------------------------->
  <section id="notrel">
-    <div class="container">
-      <div class="card">
-        <img src="img/shakira_pique1.png" alt=""><br>
-        <div class="titulo">
-          <h3>
-            Shakira quedó en shock al ver a la<br>  presunta 
-            amante de Gerard Piqué: <br>son dos gotas de agua
-          </h3>
-        </div>
-        <div class="descripcion">
-          <p>
-            Un retrato de la supuesta tercera en discordia fue<br> filtrado a 
-            la prensa española, en medio del escándalo <br>por el fin de 
-            la relación de 12 años que unía al futbolista<br> y la estrella pop.
-          </p>
-        </div>
-        <div class="emojis">
-          <img src="img/emojis.png" alt="" width="50px">
-        </div>
+  <div class="container">
+    <div class="card">
+      <img src="img/shakira_pique1.png" alt=""><br>
+      <div class="titulo">
+        <h3>
+          Shakira quedó en shock al ver a la<br>  presunta 
+          amante de Gerard Piqué: <br>son dos gotas de agua
+        </h3>
+      </div>
+      <div class="descripcion">
+        <p>
+          Un retrato de la supuesta tercera en discordia fue<br> filtrado a 
+          la prensa española, en medio del escándalo <br>por el fin de 
+          la relación de 12 años que unía al futbolista<br> y la estrella pop.
+        </p>
+      </div>
+      <div class="emojis">
+        <img src="img/emojis.png" alt="" width="50px">
+      </div>
+
+   </section>
+   <br>
+   <br>
+   <br>
 
 
-         <!----------------------FOOTER------------------------->
+         <!----------------------CUERPO 5 - FOOTER------------------------->
  <section id="footer">
     <div class="contFooter">
       <img src="img/logoFooter.png" alt="">
@@ -472,7 +533,8 @@
           <h3>OTROS</h3> <br>
           <ul>
             <li>COCINA</li>
-            <li>LOTERÍA Y QUINIELA</li>
+            <li>LOTERÍA<br> Y
+              QUINIELA</li>
             <li>SANTORAL</li>
             <li>EFEMÉRIDES</li>
             <li>HORÓSCOPO</li>
@@ -488,6 +550,7 @@
         <ul>
           <li>Seguinos en:</li>
           <li class="apps">Descarga nuestra app</li>
+          <li></li>
         </ul>
       </div><br>
   
@@ -499,6 +562,7 @@
         </ul>
       </div>
    </div>
+  </section>
 
 
 

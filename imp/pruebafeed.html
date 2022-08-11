@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Este es un ejemplo</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="contenedor">
+      <section id="seccion-1">
+        <h1>
+          Este es el encabezado <br />
+          de mi landing
+        </h1>
+        <h2>
+          Acá vamos a explicar por qué es una oportunidad especial para nuestres
+          usuaries
+        </h2>
+        <button class="boton-cta">Conseguir la recompensa</button>
+      </section>
+
+      <section id="seccion-2">
+        <h2>Este es el título de esta sección</h2>
+        <div class="contendor-img">
+          <div class="contenedor-2">
+            <img src="img/imagen.jpg" alt="" />
+          </div>
+
+          <img src="img/imagen.jpg" alt="" />
+          <img src="img/imagen.jpg" alt="" />
+          <img src="img/imagen.jpg" alt="" />
+        </div>
+      </section>
+
+      <section id="seccion-3">
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+      </section>
+
+      <section id="seccion-4">
+        <form onsubmit="enviarFormulario(); return false">
+          <label for="fname">Nombre</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value=""
+            placeholder="Ingresá tu nombre"
+          /><br />
+          <label for="mail">Mail</label><br />
+          <input
+            type="text"
+            id="mail"
+            name="mail"
+            placeholder="Ingresá tu correo"
+          /><br /><br />
+
+
+          <select name="autos" id="fautos">
+            <option selected disabled>Elegí un auto</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <br />
+          <br />
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="vehicle1"> Tengo una bici</label><br />
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+          <label for="vehicle2"> Tengo auto</label><br />
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+          <label for="vehicle3"> Tengo moto</label><br />
+          <br />
+          <br />
+
+          <div id="radio-container">
+            <input
+              type="radio"
+              id="html"
+              name="lenguaje-favorito"
+              value="HTML"
+            />
+            <label for="html">HTML</label><br />
+            <input type="radio" id="css" name="lenguaje-favorito" value="CSS" />
+            <label for="css">CSS</label><br />
+            <input
+              type="radio"
+              id="javascript"
+              name="lenguaje-favorito"
+              value="JavaScript"
+            />
+            <label for="javascript">JavaScript</label>
+          </div>
+          <br />
+          <br />
+
+          <input id="boton-form" type="submit" value="Enviar" />
+        </form>
+      </section>
+
+      <div class="fondo-popup no-mostrar" id="contenedor-feedback">
+        <section id="seccion-feedback" class="popup">
+          <h1>Feedback</h1>
+          <h2>
+            ¡Gracias <span id="nombre-usuario">@nombre</span> por suscribirte!
+          </h2>
+          <h3>Te enviado los datos a <span id="mail-usuario">@email</span></h3>
+          <br />
+          <h4>Auto elegido: <span id="auto-elegido">@auto</span></h4>
+          <br />
+          <h4>Tiene bici: <span id="tiene-bici">@tiene-bici</span></h4>
+          <h4>Tiene auto: <span id="tiene-auto">@tiene-auto</span></h4>
+          <h4>Tiene moto: <span id="tiene-moto">@tiene-moto</span></h4>
+          <br />
+          <h4>
+            Lenguaje favorito: <span id="lenguaje-favorito">@lenguaje-favorito </span>
+          </h4>
+          <button onclick="cerrarFeedback()">Ok, listo</button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
