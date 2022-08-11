@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*-------------------------ENCABEZADO-------------------------------*/
+
+.encabezado{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.encabezado .fila1 ul li, .fila2 ul li{
+    list-style: none;
+    float: left;
+}
+
+.encabezado .fila1, .fila2{
+    background-color: #F3F3F3;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+
+.encabezado .fila1 ul li, .encabezado .fila2 ul li{
+    padding: 5px;
+}
+
+.encabezado .fila4 .contenedor{
+    background-color: #F3F3F3;
+    width: 200px;
+    height: 0%;
+}
+
+
+
+/*-------------------------CUERPO1-------------------------------*/
+#seccion-cuerpo1 .titulo1{
+    margin: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-size: 1.6rem;
+    color: #490000;
+}
+
+#seccion-cuerpo1 .subtitulo{
+    color: #F3F3F3;
+    background: #6F1111;
+    border-radius: 5px;
+    font-style: normal;
+    height: 25px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    margin: 0 20px;
+
+}
+
+/*-------------------------DROPDOWN-------------------------------*/
+
+#seccion-cuerpo1 .temas, .ordenar{
+    font-family:'Helvetica', Arial, sans-serif;
+}
+
+#seccion-cuerpo1  select{
+    background:#F3F3F3;
+    color:rgb(0, 0, 0);
+    font-weight:bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    margin-right:1.7%;
+    padding:15px;
+    cursor:pointer;
+    border: none;
+    border-radius:0.3em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width:30.7vw;
+    height: 68px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+
+
+/*-------------------------PLACAS-------------------------------*/
+
+.contenedor-placas {
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.contenedor-placas .contenedor{
+    background-color: rgb(95, 16, 16);
+}
+
+/*-------------------------BOTÓN DE LIKE------------------------*/
+.contenedor-placas .likear{
+    font-family: 'Roboto';
+    width: 8vw;
+    height: 6vh;
+    background:#FFE145;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/*----------------CONT DE NUMERO DE LIKES----------------------*/
+.contenedor-placas .likes span{
+    background: #FFED92;
+    width: 2.5vw;
+    height: 6vh;
+    font-weight: 500;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 13px;
+    font-family: 'Roboto';
+}
+
+
+/*-------------------BOTÓN VER MÁS-------------------*/
+.contenedor-placas .vermas{
+    justify-content: center;
+    width: 12%;
+    background: #F3F3F3;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3.68254px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+
+/*-------------------PLACAS QUE SE VAN A VER DESPUES DEL VER MAS-------------------*/
+.contenedores-ver-mas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedores-ver-mas div.hide {
+    display: none;
+}
+
+.contenedor {
+    width: 350px;
+    height: 200px;
+    background-color: grey;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor img{
+    width: 90%;
+    height: 100%;
+}
+
+#ver-mas.hide {
+    display: none;
+}
+
+
+/*button.guardar {
+    background-color: red;
+    color: white;
+}
+button.guardar.guardado{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}*/
