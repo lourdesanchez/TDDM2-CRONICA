@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 
 *{
@@ -328,9 +328,11 @@ html{
    /*---------------------CREAR PLACA-----------------------------*/
    #form-placa{
     background-color: #E8BF0A;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 90%;
+    /*width: 70%;
+    margin-left: 230px;
+    height: 40px;
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
     }
 
     #form-placa h3{
@@ -599,44 +601,166 @@ html{
     list-style: none;
   }
   
-/*----------------------------FORM----------------------------*/
 
-form {
-  font-size: 3rem;
+
+
+/*----------------------------FORM----------------------------*/
+.contform {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
-form input {
-  font-size: 2.5rem;
+
+form{
+  padding: 0px 20px;
+}
+
+form select{
+  width: 30.1vw;
+    height: 50px;
+    padding: 5px 1px 5px 10px;
+    /*background: #FFFFFF;*/
+    font-family: 'Roboto';
+    font-style: italic;
+    box-shadow: 0px 4.53257px 4.53257px rgb(0 0 0 / 25%);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    font-size: 1em;
+}
+
+form textarea{
+  width: 29.7vw;
+    height: 90px;
+    padding: 5px 1px 5px 5px;
+    background: #DDDDDD;
+    font-family: 'Roboto';
+    font-style: italic;
+    box-shadow: 0px 4.53257px 4.53257px rgb(0 0 0 / 25%);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    font-size: 1em;
+}
+
+form  .nombreOP input{
+  width: 29.4vw;
+  height: 40px;
+  padding: 5px 1px 5px 10px;
+  background: #DDDDDD;
+  font-family: 'Roboto';
+  font-style: italic;
+  box-shadow: 0px 4.53257px 4.53257px rgb(0 0 0 / 25%);
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  font-size: 1em;
+}
+
+/*---------------BOTÓN ENVIAR----------------------*/
+form input{
+  width: 30.3vw;
+  height: 40px;
+  padding: 5px 1px 5px 10px;
+  background: #814646;
+  font-family: 'Roboto';
+  font-style: italic;
+  box-shadow: 0px 4.53257px 4.53257px rgb(0 0 0 / 25%);
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.53);
+}
+
+form .botonEnviar input:hover{
+  background: #620707;
+  color: #FFFFFF;
+
+}
+
+
+
+
+.feedb{
+  display: flex;
+  justify-content: center;
+}
+
+.feedb .compartir{
+  padding: 0px 20px;
+
 }
 
 #seccion-feedback {
-  background-color: red;
+  background-image: url(../img/placaCont.png);
+  width: 33%;
+  /*height: 100%;*/
+  text-align: center;
 }
+
+#seccion-feedback h3{
+  margin-top: 100px;
+  font-size: 35px;
+  font-family: 'Bebas Neue';
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+#seccion-feedback p{
+  font-family: 'Roboto';
+  color: white;
+  font-style: normal;
+  font-size: 15px;
+}
+
 .mostrar {
-  display: flex;
+  /*display: flex;*/
 }
 .no-mostrar {
   display: none !important;
 }
 
 
-#seccion-feedback h1,
-#seccion-feedback h2 {
-  /*font-size: 2rem;*/
-}
 
 .fondo-popup {
-  /*position: fixed;*/
-  width: 100vw;
-  height: 100vh;
-  /*background-color: rgba(0, 0, 0, 0.75);*/
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #E8BF0A;
+  height: 70vh;
+  /*position: fixed;*/
+  /*width: 30vw;
+  height: 80vh;
+  /*background-color: rgba(0, 0, 0, 0.75);*/
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.fondo-popup h1, h3{
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.fondo-popup button{
+  font-family: 'Roboto';
+  cursor: pointer;
+   margin: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background: #F3F3F3;
+   box-shadow: 0px 9.20635px 7.36508px rgba(0, 0, 0, 0.25);
+   border-radius: 3.68254px;
+   border: none;
+   width: 120px;
+   height: 35px;
+   font-style: bold;
+}
+
+.fondo-popup button:hover{
+  background: #C00000;
+  color: white;
 }
 
 .popup {
   width: 80%;
-  max-height: 90%;
+  /*max-height: 90%;*/
 }

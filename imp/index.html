@@ -413,84 +413,68 @@
   <!-------------------------------------------CUERPO3 - CREAR PLACA----------------------------------->
   <section id="seccion-cuerpo3">
     <div id="form-placa">
-      <h3>Creá tu propia placa y compartila con tus amigos</h3>
-
 
       <section id="seccion-4">
-        <form onsubmit="enviarFormulario(); return false">
+        <h3 class="mostrarTitulo">Creá tu propia placa y compartila con tus amigos</h3>
 
-          <select name="tema" id="tema">
-            <option selected disabled>Elegí un tema</option>
-            <option value="saab">SHAKIRA Y PIQUÉ</option>
-            <option value="mercedes">SUPERCLÁSICO</option>
-            <option value="audi">TINI CONCIERTO</option>
-            <option value="audi">MARIA BECERRA</option>
-          </select>
-          <br />
-          <br />
-          <br />
-          <br />
+        <div class="contform">
+          <form onsubmit="enviarFormulario(); return false">
 
-          <!--label for="fname">Escrbí el texto de tu placa</label-->
-          <textarea  type="text" for="texto"  id="texto" name="texto" placeholder="Elegí un tema" required placeholder></textarea>
-          <br />
-          <!--input type="text" id="fname" name="fname" value="" placeholder=""/--><br />
-          <label for="nombre"></label><br />
-          <input type="text" id="nombre" name="nombre" placeholder="Escrbí el texto de tu placa"/><br /><br />
-          <br />
-          <br />
+            <!----------------------DROPDOWN------------------>
+            <select name="tema" id="tema">
+              <option selected disabled>Elegí un tema</option>
+              <option value="saab">SHAKIRA Y PIQUÉ</option>
+              <option value="mercedes">SUPERCLÁSICO</option>
+              <option value="audi">TINI CONCIERTO</option>
+              <option value="audi">MARIA BECERRA</option>
+            </select>
+            <br />
+            <br />
+         
+            <!--label for="fname">Escrbí el texto de tu placa</label-->
+            <textarea  type="text" for="texto"  id="texto" name="texto" placeholder="Escribí el texto de tu placa" required placeholder></textarea>
+            <br />
+            <!--input type="text" id="fname" name="fname" value="" placeholder=""/--><br />
+            <div class="nombreOP">
+              <input type="text" id="nombre" name="nombre" placeholder="Indicanos tu nombre (opcional)"/><br /><br />
+            </div>
 
+        <div class="botonEnviar">
           <input id="boton-form" type="submit" value="Enviar" />
-        </form>
+        </div>
+          </form>
+
+        <div class="contenedorPlaca">
+          <img src="img/placaCont.png" alt="" width="94%">
+        </div>
+      </div>
       </section>
-
-      <div class="fondo-popup no-mostrar" id="contenedor-feedback">
-        <section id="seccion-feedback" class="popup">
-          <h1>¡EXELENTE!</h1>
-          <h3><span id="texto-usuario">@nombre</span></h3>
-          <br />
-          <br />
-          <h5>Por <span id="nombre-usuario">@email</span></h5>
-          <br />
-          <button onclick="cerrarFeedback()">Crear otra</button>
-          <button onclick="cerrarFeedback()">Ver placas</button>
-        </section>
-      </div>
-    
-      <!----------------------DROPDOWN------------------>
-      <!--div id="columna-madre-placas">
-      <div id="columna-placas">
-      <form onsubmit="enviarPlaca(); return false">
-      <div id="dropdownPlaca">
-        <select name="temas" id="temasPlacas">
-          <option class="opcionesDeTemas"  required selected disabled >Temas</option>
-          <option value="Shakira y Piqué">Shakira y Piqué</option>
-          <option value="superclásico">Superclásico</option>
-          <option value="concierto Tini">Concierto Tini</option>
-          <option value="Maria Becerra">Maria Becerra</option>
-        </select>
-      </div>
-
-      <textarea  name="message" placeholder="Texto de la placa" required placeholder  id="texto-form-placa" ></textarea>
-
-      <div id="contenedor-nombre-placa-form">
-        <input type="text" name="name" placeholder="Ingresa tu nombre (Opcional)" id="name" class="cont-formulario">
-      </div>
-  </form>
-
-  <div id="boton-placa-form">
-    <button  type="button" name="button">ENVIAR</button>
-    </div>
-
-    </div>
-
-    <div id="columna-placas2">
-      <div class="contenedor">
-      </div>
-      <img src="img/p1.png" alt="">
-      </div>
-    </div--->
   </section>
+
+  <!----------------------FEEDBACK------------------>
+  <div class="fondo-popup no-mostrar" id="contenedor-feedback">
+    <h1>¡EXELENTE!</h1>
+    <br>
+    <h3>No te olvides de compartir el resultado </h3>
+    <br />
+    <div class="feedb">
+      <section id="seccion-feedback" class="popup">
+        <h3><span id="texto-usuario">@nombre</span></h3>
+        <br />
+        <br />
+        <br>
+        <br>
+        <br>
+        <p>Por <span id="nombre-usuario"></span></p>
+        <br />
+      </section>
+      <div class="compartir">
+        <img src="img/compartir.png" alt="">
+      </div>
+    </div>
+
+    <button onclick="cerrarFeedback()"><strong>Crear otra</strong></button>
+  </div>
   <br>
   <br>
   <br>
