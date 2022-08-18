@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crónica</title>
+
+    <!----------------------ICONO--------------------------->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!----------------------ESTILOS--------------------------->
+    <link rel="stylesheet" href="css/estilos.css" />
+    
+  <!----------------------SCRIP--------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+
+    <script src="js/ordenarPlacasYLikes.js"></script>
+
+    <script src="js/feedback.js"></script>
+
+  </head>
+
+  <body>
+
+    <!----------------------HEADER--------------------------->
+    <div class="encabezado">
+      <div id="header1"> 
+      <div class="fila1">
+          <ul>
+              <li><img src="img/menu.png" alt=""></li>
+              <li style="
+              padding-top: 7px;
+          ">Menu</li>
+          </ul>
+      </div>
+      <div class="fila2">
+          <ul>
+              <li style="
+              padding-top: 0px;
+              padding-right: 0px;
+              padding-bottom: 0px;
+              padding-left: 0px;
+          " ><img src="img/buscar.png" alt=""></li>
+              <li >Buscar</li>
+          </ul>
+      </div>
+    </div>
+  
+      <div class="fila3">
+             <img src="img/cronica.png" alt="">
+      </div>
+  
+      <div class="fila4">
+          <div class="contenedor-vacio"></div>
+      </div>
+  
+      <div class="fila5">
+          <img src="img/enVivo.png" alt="">
+      </div>
+    </div>
+   
+<section id="general">
+   <!---------------------------------CUERPO1----------------------------------->
+  <section id="seccion-cuerpo1">
+
+   <!----------------------TITULO--------------------------->
+   <div class="titulo1">
+    <h1>PLACAS ROJAS</h1>
+  </div>
+  <br>
+
+  <!--------------------CONT SUBTITULO-------------------->
+  <div class="subtitulo">
+    <h2>EN VOTACIÓN</h2>
+  </div>
+
+
+  <!--------------------DROPDOWN-------------------->
+<div class="dropdownVotar">
+  <select class="temas" id="temas">
+    <option selected disabled>SHAKIRA Y PIQUÉ</option>
+    <option value="shakira-y-pique">SHAKIRA Y PIQUÉ</option>
+    <option value="superclasico">SUPERCLÁSICO</option>
+    <option value="concierto-tini">CONCIERTO DE TINI</option>
+    <option value="mariabecerra">MARIA BECERRA</option>
+  </select>
+
+  <select class="ordenar" id="ordenar-por">
+    <option selected disabled>MÁS RECIENTES</option>
+    <option value="mas-recientes">MÁS RECIENTES</option>
+    <option value="mas-megusta">MÁS ME GUSTA</option>
+  </select>
+</div>
+
+
+
+  <!------------------------PLACAS----------------------->
+
+  <div class="contenedor-placas">
+
+    <div class="contenedor" id="contenedor1">
+      <div class="likes">
+        <!--button class="guardar">VOTAR</button-->
+        <button class="likear">VOTAR</button><span></span>
+      </div>
+    </div>
+
+    <div class="contenedor" id="contenedor2">
+      <div class="likes">
+        <!--button class="guardar">Guardar</button-->
+        <button class="likear">VOTAR</button><span></span>
+      </div>
+    </div>
+
+    <div class="contenedor" id="contenedor3">
+      <div class="likes">
+        <!--button class="guardar">Guardar</button-->
+        <button class="likear">VOTAR</button><span></span>
+      </div>
+    </div>
+
+    <div class="contenedor" id="contenedor4">
+      <div class="likes">
+        <!--button class="guardar">Guardar</button-->
+        <button class="likear">VOTAR</button><span></span>
+      </div>
+    </div>
+
+    <div class="contenedor" id="contenedor5">
+      <div class="likes">
+        <!--button class="guardar">Guardar</button-->
+        <button class="likear">VOTAR</button><span></span>
+      </div>
+    </div>
+
+    <div class="contenedor" id="contenedor6">
+      <div class="likes">
+        <!--button class="guardar">Guardar</button-->
+        <button class="likear">VOTAR</button><span></span>
+      </div>
+    </div>
+
+      <!-----------------ANUNCIO DE CREAR TUS PLACAS-------->
+      <div class="anuncio">
+        <button ><strong><a href="#seccion-cuerpo3">CREAR</a></strong></button> 
+      </div>
+
+
+
+      
+    <div class="contenedor" id="contenedor7">
+      <div class="likes">
+        <!--button class="guardar">Guardar</button-->
+        <button class="likear">VOTAR</button><span></span>
+      </div>
+    </div>
+
+    <div class="contenedor" id="contenedor8">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor" id="contenedor9">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor" id="contenedor10">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor" id="contenedor11">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor" id="contenedor12">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor" id="contenedor13">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="cargarMas-enVotació">
+        <button  id="ver-mas"> CARGAR MÁS<div class="likes"></div>
+      </button>
+      </div>
+      <br>
+      <br>
+
+
+      <!------------------------PLACAS QUE SE TIENEN QUE VER ESPUES DEL "VER MÁS"----------------------->
+    <div class="contenedores-ver-mas">
+      <div class="contenedor hide" id="contenedor11">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor hide" id="contenedor12">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor hide" id="contenedor13">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor hide" id="contenedor14">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      <div class="contenedor hide" id="contenedor15">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+
+      
+      <div class="contenedor hide" id="contenedor16">
+        <div class="likes">
+          <!--button class="guardar">Guardar</button-->
+          <button class="likear">VOTAR</button><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+</section>
+   <!---------------------------------CUERPO2----------------------------------->
+       <section id="seccion-cuerpo2">
+
+        <!----------------------ANTERIORES MÁS VOTADAS------------------------->
+        <div class="anteriores-votadas">
+            <h2>ANTERIORES MÁS VOTADAS</h2>
+        </div>
+ 
+         <!----------------------TEMAS + BOTONES------------------------->
+     <div class="subtitulo-masvotadas">
+           <h3>TEMAS</h3>
+    </div>
+   
+
+      <div id="botones-masvotadas">
+        <div class="seleccionado">
+          <button >CARPINCHOS EN NORDELTA</button>
+        </div>
+        <button>CHANO INTERNACIÓN</button>
+        <button>CINCO PESOS</button>
+        <button>CHINA SUÁREZ Y RUAHERKING</button>
+      </div>
+
+      <div class="subtitulo-podio">
+        <h3>PODIO</h3>
+      </div>
+  
+       <!-----------------1ERA FILA DE PLACAS-------------->
+       <div class="container">
+        <div class="card2">
+          <img src="img/p15.png" alt="">
+          <div class="votar">
+            <div class="boton-votar">
+              <button class="boton-votar-votado2">VOTOS</button>
+              <span>43</span>
+            </div>
+      </div>
+    </div>
+    
+    <div class="card2">
+      <img src="img/p16.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado2">VOTOS</button>
+          <span>36</span>
+        </div>
+    
+      </div>
+    </div>
+    
+    <div class="card2">
+      <img src="img/p17.png" alt="">
+      <div class="votar">
+        <div class="boton-votar">
+          <button class="boton-votar-votado2">VOTOS</button>
+          <span>29</span>
+        </div>
+    
+      </div>
+    </div>
+    </div>
+
+    
+     <!----------------------SIGUIENTES PUESTOS------------------------->
+  
+     <div class="subtitulo-siguientepuesto">
+        <h3>SIGUIENTES PUESTOS</h3>
+     </div>
+
+
+     <!-----------------2DA FILA DE PLACAS-------------->
+     <div class="container">
+      <div class="card">
+        <img src="img/p18.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTOS</button>
+            <span>17</span>
+          </div>
+    
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="img/p19.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTOS</button>
+            <span>15</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="img/p20.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTOS</button>
+            <span>13</span>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+    <!------------------------3RA FILA DE PLACAS--------------------------------------->
+    <div class="container">
+      <div class="card">
+        <img src="img/p21.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTOS</button>
+            <span>7</span>
+          </div>
+    
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="img/p22.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTOS</button>
+            <span>4</span>
+          </div>
+    
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="img/p23.png" alt="">
+        <div class="votar">
+          <div class="boton-votar">
+            <button class="boton-votar-votado2">VOTOS</button>
+            <span>1</span>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+
+   <!-------------------BOTON DE CARGAR MÁS------------------->
+   <div class="cargarmas">
+    <button type="button" name="button">VER MÁS</button>
+  </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <!-------------------------------------------CUERPO3 - CREAR PLACA----------------------------------->
+  <section id="seccion-cuerpo3">
+    <div id="form-placa">
+
+      <section id="seccion-4">
+        <h3 class="mostrarTitulo">Creá tu propia placa y compartila con tus amigos</h3>
+
+        <div class="contform">
+          <form onsubmit="enviarFormulario(); return false">
+
+            <!----------------------DROPDOWN------------------>
+
+           <select name="tema" id="tema">
+              <option selected disabled>Elegí un tema</option>
+              <option value="">SHAKIRA Y PIQUÉ</option>
+              <option value="">SUPERCLÁSICO</option>
+              <option value="">TINI CONCIERTO</option>
+              <option value="">MARIA BECERRA</option>
+            </select>
+            <br />
+            <br />
+
+            <!--label for="fname">Escrbí el texto de tu placa</label-->
+            <textarea  type="text" for="texto"  id="texto"  name="texto" placeholder="Escribí el texto de tu placa" required placeholder disabled></textarea>
+            <br />
+
+            <script>
+                $(document).ready(function () {
+                    $('#tema').change(function (e) {
+                      if ($(this).val() === "") {
+                        $('#texto').prop("disabled", false);
+                      } else {
+                        $('#texto').prop("disabled", true);
+                      }
+                    })
+                  });
+
+                  $(document).ready(function () {
+                      $('#tema').change(function (e) {
+                        if ($(this).val() === "") {
+                          $('#nombre').prop("disabled", false);
+                        } else {
+                          $('#nombre').prop("disabled", true);
+                        }
+                      })
+                    });
+
+                    $(document).ready(function () {
+                        $('#tema').change(function (e) {
+                          if ($(this).val() === "") {
+                            $('#boton-form').prop("disabled", false);
+                          } else {
+                            $('#boton-form').prop("disabled", true);
+                          }
+                        })
+                      });
+              </script>
+
+            <!--input type="text" id="fname" name="fname" value="" placeholder=""/--><br />
+            <div class="nombreOP">
+              <input type="text" id="nombre" name="nombre" disabled placeholder="Indicanos tu nombre (opcional)"/><br /><br />
+            </div>
+
+        <div class="botonEnviar">
+          <input id="boton-form" type="submit" value="Enviar" disabled />
+        </div>
+
+          </form>
+
+        <div class="contenedorPlaca">
+          <img src="img/placaCont.png" alt="" >
+        </div>
+      </div>
+      </section>
+  </section>
+
+  <!----------------------FEEDBACK------------------>
+  <div class="fondo-popup no-mostrar" id="contenedor-feedback">
+    <h3>¡EXCELENTE!</h3>
+    <br>
+    <h1>No te olvides de compartir el resultado </h1>
+    <br />
+    <div class="feedb">
+      <section id="seccion-feedback" class="popup">
+        <h3><span id="texto-usuario">@nombre</span></h3>
+        <br />
+        <br />
+        <br>
+        <br>
+        <br>
+        <p>Por <span id="nombre-usuario"></span></p>
+        <br />
+      </section>
+      <div class="compartir">
+        <img src="img/compartir.png" alt="">
+      </div>
+    </div>
+
+    <button onclick="cerrarFeedback()"><strong>Crear otra</strong></button>
+  </div>
+  <br>
+  <br>
+  <br>
+
+   <!---------------------------------CUERPO4----------------------------------->
+   <section id="#secction-cuerpo4">
+
+     <!----------CONTENEDOR DE TITULO-NOTICIAS RELACIONADAS------------>
+     <div class="noticrel">
+      <h2>NOTICIAS RELACIONADAS</h2>
+    
+      <h3>VER MÁS</h3>
+      <img src="img/vermas.png" alt="">
+    </div><br>
+
+          <!----------------------CARD CON LAS NOTICIAS------------------------->
+          <div class="contCards">
+            <div class="ui-card">
+              <img src="img/shakira_pique1.png">
+              <h3>Shakira quedó en shock al ver a la presunta <br> amante de Gerard Piqué: son dos gotas de agua</h3>
+              <div class="description">
+                <p>Un retrato de la supuesta tercera en discordia fue filtrado a <br> la prensa española, en medio 
+                  del escándalo por el fin de la <br> relación de 12 años que unía al futbolista y la estrella pop.</p>
+              </div>
+              <div class="emojis">
+                <img src="img/emojis.png" alt="">
+              </div>
+              <div class="emojisnumero">
+                <img src="img/emojNum1.png" alt="">
+              </div>
+            </div>
+  
+            <div class="ui-card">
+              <img src="img/shakira_pique2.png">
+              <h3>Trascendió el cruel apodo que los amigos de <br> Piqué le habían puesto a Shakira</h3>
+              <div class="description">
+                <p>Según revelaron, Shakira ya no tiene más vínculos en <br> Barcelona tras su separación, 
+                  ya que los más cercanos al <br> futbolista no habrían soportado su actitud “odiosa”.</p>
+              </div>
+              <div class="emojis2">
+                <img src="img/emojis2.png" alt="">
+              </div>
+              <div class="emojisnumero">
+                <img src="img/emojis-num2.png" alt="">
+              </div>
+            </div>
+  
+            <div class="ui-card">
+              <img src="img/shakira_pique3.png">
+              <h3>Publican fotos de Shakira llorando <br> desconsoladamente tras separarse de Gerard Piqué</h3>
+              <div class="description">
+                <p>Un medio internacional registró a la cantante colombiana, <br> que la rompió con "Te Felicito", 
+                  en su automóvil con gestos <br> visibles de enorme tristeza. ¡Mirá las fotos!</p>
+              </div>
+              <div class="emojis3">
+                <img src="img/emojis3.png" alt="">
+              </div>
+              <div class="emojisnumero">
+                <img src="img/emojis-num3.png" alt="">
+              </div>
+            </div>
+
+          </div>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+         <!----------------------CUERPO 5 - FOOTER------------------------->
+ <section id="footer">
+    <div class="contFooter">
+      <img src="img/logoFooter.png" alt="">
+      <br><br><br>
+  
+      <div class="columnasFooter">
+  
+        <div class="colum1Footer">
+          <h3>SOCIEDAD</h3> <br>
+          <ul>
+            <li>POLÍTICA</li>
+            <li>COMUNIDAD</li>
+            <li>POLICIALES</li>
+            <li>SALUD</li>
+            <li>CLIMA</li>
+            <li>OPINIÓN</li>
+          </ul>
+        </div>
+    
+        <div class="colum2Footer">
+          <h3>ENTRETENIMIENTO</h3> <br>
+          <ul>
+            <li>CINE Y SERIES</li>
+            <li>COSAS DE LOCOS</li>
+            <li>PARANORMAL</li>
+            <li>VIDEOS</li>
+          </ul>
+        </div>
+    
+        <div class="colum3Footer">
+          <h3>INTERNACIONALES</h3> <br>
+          <ul>
+            <li>MUNDO</li>
+            <li>TECNOLOGIA</li>
+          </ul>
+        </div>
+    
+        <div class="colum4Footer">
+          <h3>OTROS</h3> <br>
+          <ul>
+            <li>COCINA</li>
+            <li>LOTERÍA<br> Y
+              QUINIELA</li>
+            <li>SANTORAL</li>
+            <li>EFEMÉRIDES</li>
+            <li>HORÓSCOPO</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+  
+      <img src="img/linea.png" alt="">
+      <br><br>
+  
+      <div class="colTxtInfo">
+        <ul>
+          <li>Seguinos en:</li>
+          <li class="apps">Descarga nuestra app</li>
+          <li></li>
+        </ul>
+      </div><br>
+  
+      <div class="colInfo">
+        <ul>
+          <li><img src="img/redes.png" alt=""></li>
+          <li><img src="img/apps.png" alt=""></li>
+          <li><img src="img/grupoCrónica.png" alt=""></li>
+        </ul>
+      </div>
+   </div>
+  </section>
+</section>
+
+</section>
+
+  </body>
+</html>
